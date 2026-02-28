@@ -185,7 +185,8 @@ cat 000-default.conf
 
 10. Показывает список всех контейнеров (и запущенных, и остановленных)
 
-```PowerShellpowershellker ps -a
+```powershell
+doсker ps -a
 ```
 
 11. Удаляет контейнер с именем containers04
@@ -194,5 +195,23 @@ cat 000-default.conf
 docker rm containers04
 ```
 
-### Вывод
+## Вывод
+
 В ходе лабораторной работы был запущен контейнер Ubuntu в Docker и выполнены базовые команды Debian/Ubuntu. В контейнере установлен и запущен веб-сервер Apache, проверена его доступность через `http://localhost:8000`, а также заменена страница по умолчанию на страницу с текстом `"Hello, World!"`. После завершения работы выполнен выход из контейнера, просмотрены все контейнеры и контейнер `containers04` был удалён
+
+## Библиография
+
+1. Docker Docs — команда `docker run` (запуск контейнера, параметры `-p`, `--name`, интерактивный режим)  
+   [https://docs.docker.com/reference/cli/docker/container/run/](https://docs.docker.com/reference/cli/docker/container/run/)
+2. Docker Docs — команда `docker ps` / `docker container ls` (просмотр контейнеров, включая `-a`)  
+   [https://docs.docker.com/reference/cli/docker/container/ls/](https://docs.docker.com/reference/cli/docker/container/ls/)
+3. Docker Docs — команда `docker rm` / `docker container rm` (удаление контейнера)  
+   [https://docs.docker.com/reference/cli/docker/container/rm/](https://docs.docker.com/reference/cli/docker/container/rm/)
+4. Ubuntu Tutorial — установка и настройка Apache  
+   [https://ubuntu.com/tutorials/install-and-configure-apache](https://ubuntu.com/tutorials/install-and-configure-apache)
+5. Ubuntu Server Docs — управление пакетами (APT)  
+   [https://documentation.ubuntu.com/server/how-to/software/package-management/](https://documentation.ubuntu.com/server/how-to/software/package-management/)
+6. Apache HTTP Server Documentation — директива `DocumentRoot` (откуда Apache отдаёт сайт)  
+   [https://httpd.apache.org/docs/current/mod/core.html](https://httpd.apache.org/docs/current/mod/core.html)
+7. ChatGPT  
+   [https://chatgpt.com/](https://chatgpt.com/)
